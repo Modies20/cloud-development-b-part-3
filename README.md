@@ -13,7 +13,7 @@ The UI uses a clean **Orange / Black / White** theme.
 
 ---
 
-## ✨ Highlights
+##  Highlights
 
 * End‑to‑end CRUD flows for products and storage-backed entities
 * Upload/download blobs, list containers, and view object metadata
@@ -23,11 +23,10 @@ The UI uses a clean **Orange / Black / White** theme.
 * Production‑ready config via **appsettings.json** *or* environment variables
 * Trim, tidy codebase (seeders & sample data providers **removed**) so you can bring your own data
 
-> 🔐 **Security-first:** No secrets in repo. Use environment variables or a secret store (Azure Key Vault) for connection strings.
 
 ---
 
-## 🧱 Architecture
+##  Architecture
 
 * **ASP.NET Core MVC** on **.NET 8**
 * Storage SDK: **Azure.Data.Tables**, **Azure.Storage.Blobs**, **Azure.Storage.Queues**, **Azure.Storage.Files.Shares**
@@ -47,7 +46,7 @@ ABC-Retail-App/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1) Prerequisites
 
@@ -139,7 +138,7 @@ az storage account show-connection-string \
 
 ---
 
-## 📚 Feature Guide
+## Feature Guide
 
 ### Tables
 
@@ -162,11 +161,9 @@ az storage account show-connection-string \
 * Create shares & directories
 * Upload/list files via SDK
 
-> ⚠️ Since **seeders** were removed, create your own sample data via the UI or seed through scripts.
 
----
 
-## 🖼️ Theming
+## Theming
 
 * **Primary:** Orange
 * **Neutrals:** Black / White
@@ -174,7 +171,7 @@ az storage account show-connection-string \
 
 ---
 
-## 🔒 Security Notes
+##  Security Notes
 
 * **Never commit** secrets (connection strings, keys) to Git.
 * Prefer **Key Vault** or deployment‑slot app settings.
@@ -183,7 +180,7 @@ az storage account show-connection-string \
 
 ---
 
-## 🧪 Local Testing Tips
+## Local Testing Tips
 
 * Use **Azurite** for offline development
 * Add a few products via the **Tables**/Products UI
@@ -192,7 +189,7 @@ az storage account show-connection-string \
 
 ---
 
-## 🐞 Troubleshooting
+## Troubleshooting
 
 * **403/404 on blobs** – Check container access level or use SAS
 * **Queue not receiving** – Verify connection string & queue name; ensure emulator/service is running
@@ -233,19 +230,12 @@ Add a workflow that:
 
 ---
 
-## 🧭 Roadmap (ideas)
-
-* ✅ Basic CRUD & storage demos
-* ⏳ Add pagination & search on table lists
-* ⏳ Add image thumbnails via Azure Functions
-* ⏳ Enable MSI + role assignments to drop connection strings
-
 
 ---
 
 ## 🔗 Useful Links
 
-* **Live App:** [https://st10449316abcretails.azurewebsites.net/](https://st10449316abcretails.azurewebsites.net/)
+* **Live App:** [[https://st10449316abcretails.azurewebsites.net/](https://st10449316abcretails.azurewebsites.net/](https://abcretailapp20251114223623-aserhhdxa0bue9dt.canadacentral-01.azurewebsites.net/))
 * Azure Storage SDKs: [https://learn.microsoft.com/azure/storage/](https://learn.microsoft.com/azure/storage/)
 * Azurite Emulator: [https://learn.microsoft.com/azure/storage/common/storage-use-azurite](https://learn.microsoft.com/azure/storage/common/storage-use-azurite)
 * Queue/Blob/Table quickstarts: [https://learn.microsoft.com/azure/storage/common/storage-introduction](https://learn.microsoft.com/azure/storage/common/storage-introduction)
